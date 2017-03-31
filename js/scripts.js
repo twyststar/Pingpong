@@ -65,7 +65,8 @@ $(document).ready(function() {
   $('form#form1').submit(function(event) {
     event.preventDefault();
     $("ul li").remove();
-
+    $(".toggle img").hide();
+    
     var userNumber = Math.round(parseInt($('input#input').val()));
     var results = pingPong(userNumber);
 
@@ -78,6 +79,7 @@ $(document).ready(function() {
   $('#og').click(function(event) {
     event.preventDefault();
     $("ul li").remove();
+    $(".toggle img").hide();
 
     var userNumber = Math.round(parseInt($('input#input').val()));
     var results = pingPong(userNumber);
