@@ -1,5 +1,6 @@
+//Business Logic
 var counts = []
-var newCounts = []
+var changedCounts = []
 var pingPong = function(inputNumber) {
 
   if (isNaN(inputNumber)) {
@@ -13,27 +14,23 @@ var pingPong = function(inputNumber) {
   for (var i = 1; i <= inputNumber; i ++) {
 
     if (i % 15 === 0) {
-      newCounts.push("ping-pong");
+      changedCounts.push("ping-pong");
 
     }else if (i % 5 === 0) {
-      newCounts.push("pong");
+      changedCounts.push("pong");
 
     } else if (i % 3 === 0) {
-      newCounts.push("ping");
+      changedCounts.push("ping");
 
     } else {
-      newCounts.push(i);
+      changedCounts.push(i);
     }
 
   }
-    console.log(newCounts);
+    return changedCounts;
 }
 
-
-
-
-
-
+//UI logic
 $(document).ready(function() {
 
   $('form#form1').submit(function(event) {
@@ -41,6 +38,7 @@ $(document).ready(function() {
     var userNumber = Math.round(parseInt($('input#input').val()));
     // pingPong(userNumber);
    var result = pingPong(userNumber);
+   $('ul#result').append("<li>" + result);
+   console.log(typeof result);
   });
 });
-  //  $('ul#result').text(result);
