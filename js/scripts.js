@@ -22,6 +22,9 @@ var pingPong = function(inputNumber) {
     } else if (i % 3 === 0) {
       changedCounts.push("ping");
 
+    } else if (i === 28) {
+      changedCounts.push("This is my favorite number");
+
     } else {
       changedCounts.push(i);
     }
@@ -34,11 +37,18 @@ var pingPong = function(inputNumber) {
 $(document).ready(function() {
 
   $('form#form1').submit(function(event) {
-    event.preventDefault();
+    event.preventDefault()
+
     var userNumber = Math.round(parseInt($('input#input').val()));
-    // pingPong(userNumber);
-   var result = pingPong(userNumber);
-   $('ul#result').append("<li>" + result);
-   console.log(typeof result);
+    var results = pingPong(userNumber);
+
+    results.forEach(function(result){
+    $("ul#result").append($("<li>").text(result));
+    });
+
+    // $("#result-div").show();
+    $("#reset").click(function(){
+    location.reload()
+    });
   });
 });

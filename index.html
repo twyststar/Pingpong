@@ -9,23 +9,50 @@
     <title>Ping-Pong</title>
   </head>
   <body>
-    <div class="container">
-      <form id="form1">
-        <h1>Let's play</h1>
-        <div class="form-group well">
-          <label for="input">Enter a number</label>
-          <input type="text" class="form-control" id="input">
-          <button type="submit" class="btn btn-info">Go!</button>
-        </div>
-      </form>
+    <!-- <div class="container"> -->
+      <div class="row header">
+        <h1>Ping-Pong</h1>
+      </div>
+        <div class="main">
+          <div class="side">
+            <h4>About Ping Pong</h4>
+            <h5>Created By:</h5>
+            <h6>Starlynne Start</h6>
+            <h5>Github:</h5>
+            <h6><a href="https://github.com/twyststar">github.com/twyststar</a></h6>
+            <h5>Week 3 Solo for:</h5>
+            <h6><a href="https://www.epicodus.com/">Epicodus</a></h6>
+          </div>
+          <div class="form-group">
+            <h3>Let's Play!</h3>
+            <h5>Rules:</h5>
+            <p>Ping-pong will count up to your number from 1 with the following exceptions:</p>
+            <ol>
+              <li>Numbers divisible by 3 become "ping"</li>
+              <li>Numbers divisible by 5 become "pong"</li>
+              <li>Numbers divisible by 15 become "ping-pong"</li>
+            </ol>
+            <form id="form1">
+              <label for="input">Enter your number here:</label>
+              <input type="text"  id="input">
+              <button type="submit" class="">Ping Pong!</button>
+            </form>
+            <div id="result-div" class="">
+              <ul id='result'>
 
-      <div id="result-div" class="well">
+              <ul>
+            </div>
+          </div>
+        </div>
+
+
+      <!-- <div id="result-div" class="">
+        <button type="button" class="btn-info right" id="reset">Reset</button>
         <h3>Here we go!</h3>
         <ul id='result'>
 
         <ul>
-        <button type="button" class="btn btn-info right" name="reset">Reset</button>
       </div>
-    </div>
+    <!-- </div> -->
   </body>
 </html>
