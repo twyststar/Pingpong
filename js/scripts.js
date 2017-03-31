@@ -35,7 +35,9 @@ var pingPong = function(inputNumber) {
 
 //UI logic
 $(document).ready(function() {
-
+  $("#input").click(function(){
+    $("ul li").remove();
+  });
   $('form#form1').submit(function(event) {
     event.preventDefault()
 
@@ -46,7 +48,6 @@ $(document).ready(function() {
     $("ul#result").append($("<li>").text(result));
     });
 
-    // $("#result-div").show();
     $("#reset").click(function(){
     location.reload()
     });
