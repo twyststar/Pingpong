@@ -1,9 +1,14 @@
+var counts = []
+
 var pingPong = function(inputNumber) {
 
-  if (inputNumber !== /[\d]/) {
+  if (isNaN(inputNumber)) {
   alert("Please enter a number");
   }
-
+  for (var i = 1; i <= inputNumber; i ++) {
+    counts.push(i);
+  }
+ console.log(counts);
 }
 
 
