@@ -10,7 +10,7 @@ _This is a page that takes a number input by the user and returns a count from 1
 
 ## Setup/Installation Requirements
 
-* _view at https://twyststar.github.io/Ping-pong_
+* _view at https://twyststar.github.io/Pingpong_
 * _OR_
 * _clone this repository to desktop_
 * _open index.html with browser_
