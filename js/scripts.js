@@ -5,8 +5,39 @@ var counts = []
 var pingPong = function(inputNumber) {
   var changedCounts = []
 
-  if (isNaN(inputNumber)) {
+  if (isNaN(inputNumber) || (inputNumber < 0)) {
     alert("Please enter a number");
+  }
+
+  if (inputNumber === 0905) {
+    $("#wife").show();
+  }
+  if (inputNumber === 000) {
+    $("#ghost").show();
+  }
+  if (inputNumber === 314) {
+    $("#pie").show();
+  }
+  if (inputNumber === 666) {
+    $("#devil").show();
+  }
+  if (inputNumber === 1776) {
+    $("#usa").show();
+  }
+  if (inputNumber === 404) {
+    alert("404 GAME NOT FOUND");
+  }
+  if (inputNumber === 1021) {
+    $("#ping").show();
+  }
+  if (inputNumber === 1020) {
+    $("#star").show();
+  }
+  if (inputNumber === 1029) {
+    $("#glass").show();
+  }
+  if (inputNumber === 42) {
+    $("#answer").show();
   }
 
   for (var i = 1; i <= inputNumber; i ++) {

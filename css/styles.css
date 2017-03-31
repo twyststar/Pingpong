@@ -18,10 +18,45 @@ h3 {
 }
 input, label, #go, #og {
   float: left;
+  margin-left: 2%;
 }
 #form1 {
   display: inline;
 }
 #result-div {
   clear: both;
+}
+#woman {
+  width: 40%;
+  padding-left: 3%;
+  height: auto;
+  float: right;
+}
+#ghost {
+  display: none;
+}
+#pie {
+  display: none;
+}
+#devil {
+  display: none;
+}
+#usa {
+  display: none;
+}
+#ping {
+  display: none;
+}
+#star {
+  display: none;
+}
+#glass {
+  display: none;
+}
+#answer {
+  display: none;
+  border-radius: 50%;
+}
+#wife {
+  display: none;
 }
