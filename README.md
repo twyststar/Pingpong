@@ -10,7 +10,7 @@ _This is a page that takes a number input by the user and returns a count from 1
 
 ## Setup/Installation Requirements
 
-* _view at https://twyststar.github.io/ping-pong_
+* _view at https://twyststar.github.io/Ping-pong_
 * _OR_
 * _clone this repository to desktop_
 * _open index.html with browser_
@@ -41,7 +41,7 @@ _The program will find numbers divisible by 15 and replace with the words "ping-
 * _Input - 16_
 * _Output - 1, 2, ping, 4, pong, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong, 16_
 
-_The program will reset form and clear list allowing for new submission_
+_The program will clear list allowing for new submission_
 * _Input - new number_
 * _Output - new list_
 

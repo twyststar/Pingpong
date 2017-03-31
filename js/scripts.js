@@ -41,7 +41,21 @@ $(document).ready(function() {
     results.forEach(function(result){
     $("ul#result").append($("<li>").text(result));
     });
-    
+
+  });
+
+  $('#og').click(function(event) {
+    event.preventDefault();
+    $("ul li").remove();
+
+    var userNumber = Math.round(parseInt($('input#input').val()));
+    var results = pingPong(userNumber);
+    var backwards = results.reverse();
+
+    backwards.forEach(function(back){
+    $("ul#result").append($("<li>").text(back));
+    });
+
   });
 
   $("#reset").click(function(){

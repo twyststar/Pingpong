@@ -10,21 +10,33 @@
   </head>
   <body>
     <div class="container">
-      <form id="form1">
-        <h1>Let's play</h1>
-        <div class="form-group well">
-          <label for="input">Enter a number</label>
-          <input type="text" class="form-control" id="input">
-          <button type="submit" class="btn btn-info">Go!</button>
+      <div class="header">
+          <h1>Let's play</h1>
+      </div>
+      <div class="well">
+        <div>
+          <h3>Ping-Pong Numbers</h3>
+          <p>This is a little game where we take your number and count up to it from one...with a few exceptions:</p>
+          <ol>
+            <li>Numbers divisible by three will be replaced with "ping"</li>
+            <li>Numbers divisible by five will be replacd with "pong"</li>
+            <li>Numbers divisible by fifteen will be replaced with "ping-pong"</li>
+            <li>Is that all?...</li>
+          </ol>
+          <form id="form1">
+            <label for="input">Enter a number</label>
+            <button type="submit" class="btn-info" id="go">Go!</button>
+            <input type="text" class="" id="input">
+            <button class="btn-danger" id="og">oG!</button>
+          </form>
         </div>
-      </form>
+        <div id="result-div" class="">
+          <h3>Th count will appear below!</h3>
+          <ul id='result'>
 
-      <div id="result-div" class="well">
-        <h3>Here we go!</h3>
-        <ul id='result'>
-
-        <ul>
-        <button type="button" class="btn btn-info right" id="reset">Reset</button>
+          <ul>
+        </div>
+        <button class="btn-info" id="reset">Reset</button>
       </div>
     </div>
   </body>

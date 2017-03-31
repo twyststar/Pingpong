@@ -1,4 +1,27 @@
-.right {
-  float: right;
-  margin-top: 0px;
+
+body {
+  background-image: url(../img/balls.jpg);
+}
+.container {
+  background-color: white;
+}
+.header {
+  text-align: center;
+  min-height: 100px;
+  background-color: #d1d0cc;
+}
+h1 {
+  padding-top: 2%;
+}
+h3 {
+  padding-top: 4%;
+}
+input, label, #go, #og {
+  float: left;
+}
+#form1 {
+  display: inline;
+}
+#result-div {
+  clear: both;
 }
