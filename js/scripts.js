@@ -5,15 +5,17 @@ var pingPong = function(inputNumber) {
   if (isNaN(inputNumber)) {
   alert("Please enter a number");
   }
+
   for (var i = 1; i <= inputNumber; i ++) {
     counts.push(i);
   }
 
-      // counts.slice(, 1, "ping");
-    // });
-
   for (var i = 1; i <= inputNumber; i ++) {
-    if (i % 5 === 0) {
+
+    if (i % 15 === 0) {
+      newCounts.push("ping-pong");
+
+    }else if (i % 5 === 0) {
       newCounts.push("pong");
 
     } else if (i % 3 === 0) {
@@ -23,11 +25,8 @@ var pingPong = function(inputNumber) {
       newCounts.push(i);
     }
 
-      console.log(newCounts);
-      console.log(counts);
-
   }
- console.log(counts);
+    console.log(newCounts);
 }
 
 
