@@ -13,7 +13,10 @@ var pingPong = function(inputNumber) {
     // });
 
   for (var i = 1; i <= inputNumber; i ++) {
-    if (i % 3 === 0) {
+    if (i % 5 === 0) {
+      newCounts.push("pong");
+
+    } else if (i % 3 === 0) {
       newCounts.push("ping");
 
     } else {
